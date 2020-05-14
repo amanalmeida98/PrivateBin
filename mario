@@ -1,0 +1,29 @@
+#include <cs50.h>
+#include <stdio.h>
+
+int main(void)
+{
+    int h,i,l,r,s;
+   do
+    {
+      h=get_int("Please enter a value b/w 1 and 8: \n");
+    }
+    while ((h>8)||(h<1));
+    for (int i=0;i<=(h-1);i++)
+    {
+        for (int s=0;s<=(h-i);s++)
+        {
+            printf(" ");
+        }
+        for (int l=0;l<=i;l++)
+        {
+            printf("#");
+        }
+        printf("  ");
+        for (int r=0;r<=i;r++)
+        {
+            printf("#");
+        }
+        printf("\n");
+    }
+}
